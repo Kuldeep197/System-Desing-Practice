@@ -17,6 +17,11 @@ public class Cab {
     private String name;
     private Long seatingCapacity;
     private Long currentLocation;
+    private Boolean isAvailable;
+    private Trip currentTrip;
 
+    public void switchAvailability(Boolean isAvailable){
+        this.setIsAvailable(isAvailable);
+    }
 
 }

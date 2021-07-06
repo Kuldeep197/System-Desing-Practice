@@ -12,5 +12,9 @@ import lombok.experimental.Accessors;
 
 public class Location {
     private Integer x1;
-    private Integer x2;
+    private Integer y1;
+
+    public double distance(Location location){
+        return Math.sqrt(Math.pow(this.x1-location.getX1(),2) + Math.pow(this.y1 - location.getY1(),2));
+    }
 }

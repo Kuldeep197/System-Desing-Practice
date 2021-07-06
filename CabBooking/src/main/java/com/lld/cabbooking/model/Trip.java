@@ -32,8 +32,8 @@ public class Trip {
             .setRideStatus(TripStatus.ONGOING);
     }
 
-    public UUID endTrip(Trip trip){
-        trip.setRideStatus(TripStatus.ENDED);
-        return trip.getId();
+    public UUID endTrip(){
+        this.setRideStatus(TripStatus.ENDED);
+        return this.getId();
     }
 }
